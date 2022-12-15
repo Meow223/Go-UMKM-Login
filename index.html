@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Login GoUMKM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css">
+        <link rel="icon" type="image/png" href="logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div class="main">
+            <div class="form">
+                <div class="button">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle" onclick="login()">Login</button>
+                    <button type="button" class="toggle" onclick="signup()">Sign Up</button>
+                </div>
+                <form id="login" class="log" action="https://madmasyhur.github.io/Go-UMKM/">
+                    <input type="text" class="inputfield" placeholder="Username" required>
+                    <input type="password" class="inputfield" placeholder="Password" required="" id="pass" >
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" style="font-size:13px;color:grey;">Ingat Password</label>
+                    <br>
+                    <button type="submit" class="submit">Login</button>
+                    <br>
+                    <div class="logo">
+                        <p style="font-size:16px;text-align:center;color:grey;">atau masuk dengan</p>
+                        <img src="t.png">
+                        <img src="f.png">
+                        <img src="g.png">
+                    </div>
+                    <p style="font-size:13px;text-align:center;color:black;"> Belum terdaftar?
+                        <a style="font-size:13px;color:green;" onclick="signup()">SignUp</a>
+                    </p>
+                </form>
+                <br>
+                <form id="signup" class="sign" action="https://madmasyhur.github.io/Go-UMKM/">
+                    <div class="logo1">
+                        <img src="t.png">
+                        <img src="f.png">
+                        <img src="g.png">
+                        <p style="font-size:15px;text-align:center;color:grey;">atau dengan</p>
+                    </div>
+                    <input type="text" class="inputfield" placeholder="Masukkan Nama" required>
+                    <input type="text" class="inputfield" placeholder="Masukkan Nama UMKM" required>
+                    <input type="email" class="inputfield" placeholder="Masukkan Email" required>
+                    <input type="text" class="inputfield" placeholder="Masukkan Username" required>
+                    <input type="password" class="inputfield" placeholder="Masukkan Password" required="" id="passs">
+                    <input type="checkbox" class="checkbox" required><span>Setuju dengan ketentuan</span>
+                    <button type="submit" class="submit" >Sign Up</button>
+                </form>
+            </div>
+
+        </div>
+        <script>
+            var log = document.getElementById("login");
+            var sign = document.getElementById("signup");
+            var button = document.getElementById("btn");
+
+
+            function signup() {
+                log.style.left = "-400px";
+                sign.style.left = "50px";
+                button.style.left = "110px";
+            }
+            function login() {
+                log.style.left = "50px";
+                sign.style.left = "450px";
+                button.style.left = "0";
+            }
+
+
+
+        </script>
+    </body>
+</html> 
